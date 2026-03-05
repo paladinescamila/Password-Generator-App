@@ -6,6 +6,7 @@ import CheckBox from './components/CheckBox';
 import Strength from './components/Strength';
 import './index.css';
 import TextField from './components/TextField';
+import Button from './components/Button';
 
 type ChangeEvent = React.ChangeEvent<HTMLInputElement>;
 
@@ -44,18 +45,18 @@ function App() {
 	};
 
 	return (
-		<main>
-			<h1>Password Generator</h1>
+		<main className='flex flex-col items-center sm:justify-center p-4 w-full h-full pt-12 sm:pt-4'>
+			<h1 className='text-preset-4 sm:text-preset-2 text-grey-600'>Password Generator</h1>
 
-			<section>
+			<section className='w-full sm:w-135'>
 				<TextField value={password} />
 			</section>
 
-			<section>
-				<form>
+			<section className='w-full sm:w-135'>
+				<form className='bg-grey-800 px-8 py-6 flex flex-col gap-8'>
 					<Slider value={config.length} onChange={onChangelength} />
 
-					<fieldset>
+					<fieldset className='flex flex-col gap-4'>
 						<CheckBox
 							checked={config.includeUppercaseLetters}
 							onChange={onChangeIncludeUppercaseLetters}
@@ -87,9 +88,7 @@ function App() {
 
 					<Strength value={strength} />
 
-					<button type='button' onClick={onGeneratePassword}>
-						GENERATE <span>&rarr;</span>
-					</button>
+					<Button text='Generate' onClick={onGeneratePassword} />
 				</form>
 			</section>
 		</main>

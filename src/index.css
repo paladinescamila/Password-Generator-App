@@ -1,17 +1,89 @@
 @import 'tailwindcss';
 
+@theme {
+	--font-jetbrains-mono: 'JetBrains Mono', monospace;
+	--color-black: #000000;
+	--color-white: #ffffff;
+	--color-grey-950: #08070b;
+	--color-grey-900: #14131b;
+	--color-grey-850: #18171f;
+	--color-grey-800: #24232c;
+	--color-grey-700: #54535b;
+	--color-grey-600: #817d92;
+	--color-grey-200: #e6e5ea;
+	--color-green-200: #a4ffaf;
+	--color-yellow-300: #f8cd65;
+	--color-orange-400: #fb7c58;
+	--color-red-500: #f64a4a;
+}
+
 @utility text-preset-1 {
-	@apply font-[JetBrains_Mono] font-bold text-[32px] leading-10.5 tracking-[0px];
+	@apply font-jetbrains-mono font-bold text-[32px] leading-10.5 tracking-[0px];
 }
 
 @utility text-preset-2 {
-	@apply font-[JetBrains_Mono] font-bold text-[24px] leading-8 tracking-[0px];
+	@apply font-jetbrains-mono font-bold text-[24px] leading-8 tracking-[0px];
 }
 
 @utility text-preset-3 {
-	@apply font-[JetBrains_Mono] font-bold text-[18px] leading-6 tracking-[0px];
+	@apply font-jetbrains-mono font-bold text-[18px] leading-6 tracking-[0px];
 }
 
 @utility text-preset-4 {
-	@apply font-[JetBrains_Mono] font-bold text-[16px] leading-5 tracking-[0px];
+	@apply font-jetbrains-mono font-bold text-[16px] leading-5 tracking-[0px];
 }
+
+#root {
+	@apply h-screen bg-linear-to-r from-gray-900 to-gray-950;
+}
+
+* {
+	@apply outline-none;
+}
+
+.range-slider {
+	-webkit-appearance: none;
+	appearance: none;
+}
+
+/* WebKit (Chrome, Edge, Safari) */
+.range-slider::-webkit-slider-thumb {
+	-webkit-appearance: none;
+	appearance: none;
+	width: 28px;
+	height: 28px;
+	border-radius: 9999px;
+	border: 2px solid transparent;
+	margin-top: -10px;
+	transition:
+		background-color 150ms ease,
+		border-color 150ms ease;
+	box-sizing: border-box;
+	@apply bg-gray-200;
+}
+
+.range-slider:hover::-webkit-slider-thumb,
+.range-slider:focus-visible::-webkit-slider-thumb,
+.range-slider:active::-webkit-slider-thumb {
+	@apply bg-gray-850 border-green-200;
+}
+
+/* Firefox */
+.range-slider::-moz-range-thumb {
+	width: 28px;
+	height: 28px;
+	border-radius: 9999px;
+	border: 2px solid transparent;
+	transition:
+		background-color 150ms ease,
+		border-color 150ms ease;
+	box-sizing: border-box;
+	@apply bg-gray-200;
+}
+
+.range-slider:hover::-moz-range-thumb,
+.range-slider:focus-visible::-moz-range-thumb,
+.range-slider:active::-moz-range-thumb {
+	@apply bg-gray-850 border-green-200;
+}
+/* ...existing code... */
