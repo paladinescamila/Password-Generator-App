@@ -16,6 +16,7 @@ export default function TextField({value}: {value: string}) {
 			<input
 				type='text'
 				placeholder='P4$5W0rD!'
+				aria-label='Generated Password'
 				readOnly
 				value={value}
 				className='text-preset-2 sm:text-preset-1 text-grey-200 flex-1'
