@@ -4,6 +4,8 @@ export default function TextField({value}: {value: string}) {
 	const [copied, setCopied] = useState<boolean>(false);
 
 	const copyPassword = () => {
+		if (value.length === 0) return;
+
 		navigator.clipboard.writeText(value);
 		setCopied(true);
 		setTimeout(() => setCopied(false), 2000);
