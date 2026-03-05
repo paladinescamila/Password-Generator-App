@@ -38,7 +38,7 @@
 }
 
 * {
-	@apply outline-1 outline-red-500;
+	@apply outline-none;
 }
 
 .range-slider {
