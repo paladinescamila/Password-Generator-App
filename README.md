@@ -6,7 +6,7 @@ This is a solution to the [Password generator app challenge on Frontend Mentor](
 
 ## Links
 
-- [Solution]()
+- [Solution](https://www.frontendmentor.io/solutions/password-generator-app-bfD-ezEjOk)
 - [Live Site](https://password-generator-paladinescamila.netlify.app)
 
 ## Built with
