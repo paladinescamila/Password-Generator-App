@@ -45,7 +45,7 @@ function App() {
 	};
 
 	return (
-		<main className='flex flex-col items-center p-4 w-full h-full pt-12 sm:pt-33.25'>
+		<main className='flex flex-col items-center sm:justify-center p-4 w-full h-full pt-12 sm:pt-4'>
 			<h1 className='text-preset-4 sm:text-preset-2 text-grey-600'>Password Generator</h1>
 
 			<section className='w-full sm:w-135'>
