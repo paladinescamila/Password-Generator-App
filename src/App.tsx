@@ -45,7 +45,7 @@ function App() {
 	};
 
 	return (
-		<main className='flex flex-col items-center sm:justify-center p-4 w-full h-full pt-12 sm:pt-4'>
+		<main className='flex flex-col items-center p-4 w-full h-full pt-12 sm:pt-33.25'>
 			<h1 className='text-preset-4 sm:text-preset-2 text-grey-600'>Password Generator</h1>
 
 			<section className='w-full sm:w-135'>
@@ -53,10 +53,10 @@ function App() {
 			</section>
 
 			<section className='w-full sm:w-135'>
-				<form className='bg-grey-800 px-8 py-6 flex flex-col gap-8'>
+				<form className='bg-grey-800 px-8 py-6 sm:pb-10.5 flex flex-col gap-8'>
 					<Slider value={config.length} onChange={onChangelength} />
 
-					<fieldset className='flex flex-col gap-4'>
+					<fieldset className='flex flex-col gap-4 pt-2.5'>
 						<CheckBox
 							checked={config.includeUppercaseLetters}
 							onChange={onChangeIncludeUppercaseLetters}

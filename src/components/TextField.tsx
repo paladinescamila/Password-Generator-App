@@ -10,7 +10,7 @@ export default function TextField({value}: {value: string}) {
 	};
 
 	return (
-		<div className='p-4 sm:px-8 flex flex-row gap-4 items-center bg-grey-800 my-4 sm:mt-8 sm:my-6'>
+		<div className='pt-5 pb-4.5 px-4 sm:px-8 flex flex-row gap-4 items-center bg-grey-800 my-4 sm:mt-8 sm:my-6'>
 			<input
 				type='text'
 				placeholder='P4$5W0rD!'
@@ -27,7 +27,7 @@ export default function TextField({value}: {value: string}) {
 				<button
 					aria-label='Copy password'
 					onClick={copyPassword}
-					className='cursor-pointer group'>
+					className='cursor-pointer group pt-0.75'>
 					<svg
 						width='21'
 						height='24'

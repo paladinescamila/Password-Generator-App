@@ -10,7 +10,7 @@ export default function Slider({
 	const percent = ((value - min) / (max - min)) * 100;
 
 	return (
-		<div>
+		<div className='flex flex-col gap-6.5'>
 			<div className='flex flex-row gap-4 items-center justify-between'>
 				<label
 					htmlFor='length-slider'
@@ -33,7 +33,7 @@ export default function Slider({
 				}}
 				className='
 					range-slider
-					mt-6 w-full h-2 appearance-none cursor-pointer
+					w-full h-2 appearance-none cursor-pointer
 					[&::-webkit-slider-runnable-track]:h-2
 					[&::-webkit-slider-runnable-track]:bg-transparent
 					[&::-moz-range-track]:h-2

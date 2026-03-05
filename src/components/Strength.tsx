@@ -6,7 +6,7 @@ export default function Strength({value}: {value: PasswordStrength}) {
 	return (
 		<div
 			role='status'
-			className='bg-grey-850 px-8 py-6 flex flex-row items-center justify-between gap-4'>
+			className='bg-grey-850 px-8 py-5.5 flex flex-row items-center justify-between gap-4'>
 			<span className='text-grey-600 text-preset-4 sm:text-preset-3 uppercase'>Strength</span>
 			<div className='flex flex-row gap-4'>
 				<span className='text-preset-3 sm:text-preset-2 uppercase text-grey-200'>

@@ -3,7 +3,7 @@ export default function Button({text, onClick}: {text: string; onClick: () => vo
 		<button
 			type='button'
 			onClick={onClick}
-			className='uppercase p-4 bg-green-200 hover:bg-transparent text-grey-800 hover:text-green-200 border-2 border-green-200 flex flex-row gap-6 items-center justify-center text-preset-4 sm:text-preset-3 flex-1 cursor-pointer transition-colors duration-200 group'>
+			className='uppercase p-4.5 bg-green-200 hover:bg-transparent text-grey-800 hover:text-green-200 border-2 border-green-200 flex flex-row gap-6 items-center justify-center text-preset-4 sm:text-preset-3 flex-1 cursor-pointer transition-colors duration-200 group'>
 			{text}{' '}
 			<svg
 				width='12'
