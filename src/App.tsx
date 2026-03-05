@@ -53,7 +53,7 @@ function App() {
 			</section>
 
 			<section className='w-full sm:w-135'>
-				<form className='bg-grey-800 px-8 py-6 flex flex-col gap-7'>
+				<form className='bg-grey-800 px-8 py-6 flex flex-col gap-6.25'>
 					<Slider value={config.length} onChange={onChangelength} />
 
 					<fieldset className='flex flex-col gap-5 pt-2.5'>

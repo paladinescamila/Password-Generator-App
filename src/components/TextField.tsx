@@ -19,7 +19,7 @@ export default function TextField({value}: {value: string}) {
 				aria-label='Generated Password'
 				readOnly
 				value={value}
-				className='text-preset-2 sm:text-preset-1 text-grey-200'
+				className='text-preset-2 sm:text-preset-1 text-grey-200 placeholder:text-gray-700'
 			/>
 			<div className='relative'>
 				{copied ? (
