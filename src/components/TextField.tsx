@@ -12,7 +12,7 @@ export default function TextField({value}: {value: string}) {
 	};
 
 	return (
-		<div className='pt-5 pb-4.5 	px-8 flex flex-row gap-4 items-center justify-between bg-grey-800 my-4 sm:mt-8 sm:my-6'>
+		<div className='pt-5 pb-4.5 px-4 sm:px-8 flex flex-row gap-4 items-center justify-between bg-grey-800 my-4 sm:mt-8 sm:my-6'>
 			<input
 				type='text'
 				placeholder='P4$5W0rD!'
