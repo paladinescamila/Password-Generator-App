@@ -12,15 +12,11 @@ export default function TextField({value}: {value: string}) {
 	};
 
 	return (
-		<div className='pt-5 pb-4.5 px-4 sm:px-8 flex flex-row gap-4 items-center justify-between bg-grey-800 my-4 sm:mt-8 sm:my-6'>
-			<input
-				type='text'
-				placeholder='P4$5W0rD!'
-				aria-label='Generated Password'
-				readOnly
-				value={value}
-				className='text-preset-2 sm:text-preset-1 text-grey-200 placeholder:text-gray-700'
-			/>
+		<div className='pt-5 pb-4.5 px-4 sm:px-8 flex flex-row gap-2 items-center justify-between bg-grey-800 my-4 sm:mt-8 sm:my-6'>
+			<p
+				className={`text-preset-2 sm:text-preset-1 ${value.length === 0 ? 'text-gray-700' : 'text-grey-200'}`}>
+				{value || 'P4$5W0rD!'}
+			</p>
 			<div className='relative'>
 				{copied ? (
 					<span className='text-preset-4 sm:text-preset-3 uppercase text-green-200 absolute right-7.5 top-1/2 -translate-y-1/2 bg-grey-800 p-2'>
