@@ -18,7 +18,7 @@ export default function CheckBox({
 				id={id}
 				checked={checked}
 				onChange={onChange}
-				className='opacity-0 absolute pointer-events-none'
+				className='sr-only'
 			/>
 			<label
 				htmlFor={id}

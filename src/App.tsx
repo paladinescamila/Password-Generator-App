@@ -56,7 +56,7 @@ function App() {
 				<form className='bg-grey-800 px-8 py-6 flex flex-col gap-8'>
 					<Slider value={config.length} onChange={onChangelength} />
 
-					<fieldset className='flex flex-col gap-4.5 pt-2.5'>
+					<fieldset className='flex flex-col gap-5 pt-2.5'>
 						<CheckBox
 							checked={config.includeUppercaseLetters}
 							onChange={onChangeIncludeUppercaseLetters}
